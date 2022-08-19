@@ -1,0 +1,31 @@
+@font-face {
+    font-family: graff13;
+    src: url(../../../../public/fonts/Malice.otf) format('opentype');
+}
+
+.buttonShowList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    
+    &_btn1 {
+        font-family: graff13;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(155, 71, 233);
+        text-align: center;
+        transition: all .5s;
+        border: none;
+        outline: none;
+        width: 12rem;
+        height: 2rem;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: rgb(94, 11, 150);
+            cursor: pointer;
+        }
+    }
+}

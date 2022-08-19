@@ -1,0 +1,67 @@
+@font-face {
+    font-family: graff1;
+    src: url(../../../../public/fonts/Mostwasted.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: graff2;
+    src: url(../../../../public/fonts/Shockwave.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: graff13;
+    src: url(../../../../public/fonts/Malice.otf) format('opentype');
+}
+
+.useForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 237, 241);
+    border-radius: 10px;
+    width: 60%;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    
+    & > * {
+        margin-bottom: 1rem;
+    }
+
+    &_title {
+        color: rgb(54, 54, 54);
+        font-family: graff1;
+        font-size: 4rem;
+    }
+    
+    &_containerForm {
+
+        &_input {
+            border: none;
+            padding: .7rem 1rem;
+            width: 35rem;
+            outline: none;
+            border-radius: 10px;
+            font-family: graff2;
+            font-size: 1.3rem;
+        }
+    }
+
+    &_btnSubmit {
+        background-color: rgb(228, 126, 223);
+        transition: all .5s;
+        color: white;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        width: 9rem;
+        height: 2rem;
+        border-radius: 50px;
+        font-family: graff13;
+
+        &:hover {
+            background-color: rgb(190, 47, 183);
+            cursor: pointer;
+        }
+    }
+}
